@@ -8,7 +8,7 @@ class Post
   end
 
   def all
-
+    @@all
   end
 
   def title
