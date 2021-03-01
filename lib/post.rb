@@ -1,26 +1,21 @@
 class Post
-
   @@all = []
+  attr_accessor :name, :author
 
-  def initalize(title)
-    @title = title
-    @@all << title
+  def initialize(name)
+    @name = name
+    self.class.all << self
   end
 
-  def all
+  def self.all
     @@all
   end
 
-  def title
-
-  end
-
-  def author
-
-  end
-
   def author_name
-
+    if self.author
+      self.author.name
+    else
+      nil
+    end
   end
-
 end
