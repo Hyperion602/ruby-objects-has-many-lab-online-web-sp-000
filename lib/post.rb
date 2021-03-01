@@ -1,7 +1,7 @@
 class Post
 
   @@all = []
-  
+
   def initalize(title)
     @title = title
     @@all << @title
